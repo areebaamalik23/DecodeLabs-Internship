@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskly Elite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- HEADER: PURANA WALA TEXT & LINKS -->
+    <header class="premium-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="logo-orb"></div>
+                <div class="brand-name">Taskly<span>Elite</span></div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#footer">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn-ghost">Log In</button>
+                <button class="btn-main-action">Start Building</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: PURANA WALA TEXT -->
+        <section class="hero-full">
+            <div class="content-wrapper">
+                <div class="hero-main-text">
+                    <div class="ai-badge">● Neural Core v4.0 Active</div>
+                    <h1>Control the <span>Future.</span></h1>
+                    <p>Experience the world's most advanced task orchestration engine. Built for speed, scaled for global intelligence.</p>
+                    <div class="hero-btns">
+                        <button class="btn-primary-glow">Deploy Intelligence</button>
+                        <button class="btn-outline-pro">View Infrastructure</button>
+                    </div>
+                </div>
+
+                <!-- DASHBOARD: MODULES RETAINED -->
+                <div class="ai-interface-container">
+                    <div class="ai-dashboard">
+                        <div class="robot-wrap">
+                            <img id="robot" src="robot.webp">
+                        <div class="work-module m1">
+                            <div class="m-header">Neural Path</div>
+                            <div class="m-loader"></div>
+                            <div class="m-status">Optimizing...</div>
+                        </div>
+                        <div class="work-module m2">
+                            <div class="m-header">Sync Speed</div>
+                            <div class="m-val">1.4 TB/s</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- CLEAN SERVICES SECTION -->
+<section id="services" class="services-container">
+    <div class="container">
+        
+        <div class="centered-header">
+            <span class="tag-label">Services</span>
+            <h2>Our Core <span>Capabilities</span></h2>
+            <p>Reliable infrastructure for modern development and automation workflows.</p>
+        </div>
+
+        <!-- Grid for Cards -->
+        <div class="services-grid-main">
+            <!-- Box 1 -->
+            <div class="service-box">
+                <div class="icon-area"><i class="fas fa-folder-open"></i></div>
+                <h3>Source Resolution</h3>
+                <p>Automated indexing that manages local source paths and offline files efficiently.</p>
+            </div>
+
+            <!-- Box 2 (Highlighted) -->
+            <div class="service-box highlight">
+                <div class="icon-area"><i class="fas fa-code-branch"></i></div>
+                <h3>Commit Intelligence</h3>
+                <p>Handling post-commit stages and data transitions to keep your workflow moving.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="service-box">
+                <div class="icon-area"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h3>Neural Deploy</h3>
+                <p>Predictive scaling and resource management for your production environment.</p>
+            </div>
+        </div>
+
+        <!-- Process Bar (Kept Outside Grid for Alignment) -->
+        <div class="process-flow-container">
+            <div class="p-step">
+                <div class="p-number">1</div>
+                <span>Indexing</span>
+            </div>
+            <div class="p-divider"></div>
+            <div class="p-step active">
+                <div class="p-number">2</div>
+                <span>Committing</span>
+            </div>
+            <div class="p-divider"></div>
+            <div class="p-step">
+                <div class="p-number">3</div>
+                <span>Deploying</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section id="features" class="features-section">
+    <div class="container">
+        
+        <div class="section-header">
+            <h2>Our Core Features</h2>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 01 -->
+            <article class="feature-card">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Code Path">
+                </div>
+                <div class="feature-content">
+                    <h3>Source Path Mapping</h3>
+                    <p>Efficiently manages and resolves local file paths and offline indices to ensure project stability.</p>
+                </div>
+            </article>
+
+            <!-- Feature 02 -->
+            <article class="feature-card">
+                <div class="feature-image">
+                    <img src="https://i.pinimg.com/1200x/c5/3e/e0/c53ee081252602c320c5493822002708.jpg">
+                </div>
+                <div class="feature-content">
+                    <h3>Automated Commit Workflow</h3>
+                    <p>Handles post-commit stage transitions and repository synchronization automatically after every update.</p>
+                </div>
+            </article>
+
+            <!-- Feature 03 -->
+            <article class="feature-card">
+                <div class="feature-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Cloud Systems">
+                </div>
+                <div class="feature-content">
+                    <h3>Predictive Scaling</h3>
+                    <p>Optimizes cloud resource allocation based on production load patterns for maximum uptime.</p>
+                </div>
+            </article>
+
+            <!-- More Features -->
+<article class="feature-card">
+    <div class="feature-image">
+        <img src="https://i.pinimg.com/1200x/b9/c8/20/b9c8203be90998839a1e2321ea17422f.jpg" alt="API Security">
+    </div>
+    <div class="feature-content">
+        <h3>Secure API Integration</h3>
+        <p>Ensures encrypted data exchange between your local environment and external cloud services for maximum safety.</p>
+    </div>
+</article>
+
+<article class="feature-card">
+    <div class="feature-image">
+        <img src="https://i.pinimg.com/1200x/7c/c6/d4/7cc6d471c56592ddeede8cb8d883b0ba.jpg" alt="Monitoring">
+    </div>
+    <div class="feature-content">
+        <h3>Real-time Monitoring</h3>
+        <p>Track system performance and file synchronization status live through our optimized dashboard interface.</p>
+    </div>
+</article>
+
+<article class="feature-card">
+    <div class="feature-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800" alt="Collaboration">
+    </div>
+    <div class="feature-content">
+        <h3>Team Synchronization</h3>
+        <p>Multi-user support that keeps project sources updated across the entire development team automatically.</p>
+    </div>
+</article>
+        </div>
+
+    </div>
+
+    </main>
+
+<section id="pricing" class="pricing-container">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Scaling with your project</h2>
+            <p>Simple, predictable pricing for developers.</p>
+        </div>
+
+        <div class="pricing-wrap">
+            <!-- Tier 1 -->
+            <div class="tier">
+                <div class="tier-info">
+                    <h3>Starter</h3>
+                    <p>Perfect for side projects and local testing.</p>
+                </div>
+                <div class="tier-price">$0</div>
+                <div class="tier-action">
+                    <a href="#" class="btn-minimal">Start for free</a>
+                </div>
+            </div>
+
+            <!-- Tier 2 (Highlighted with subtle glow) -->
+            <div class="tier pro-tier">
+                <div class="tier-info">
+                    <div class="badge">Popular</div>
+                    <h3>Professional</h3>
+                    <p>Full automation for scaling production apps.</p>
+                </div>
+                <div class="tier-price">$29</div>
+                <div class="tier-action">
+                    <a href="#" class="btn-solid">Unlock Pro</a>
+                </div>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="tier">
+                <div class="tier-info">
+                    <h3>Enterprise</h3>
+                    <p>Custom security and dedicated infrastructure.</p>
+                </div>
+                <div class="tier-price">Custom</div>
+                <div class="tier-action">
+                    <a href="#" class="btn-minimal">Talk to sales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-modern">
+    <div class="container">
+        <div class="about-wrapper">
+            
+            <!-- Left: Large Image with Overlay Text -->
+            <div class="about-visual">
+                <div class="image-stack">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Tech" class="img-one">
+                    <div class="experience-badge">
+                        <h4>Precision</h4>
+                        <p>Technical Integrity</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Clean Content -->
+            <div class="about-content">
+                <span class="sub-title">Who We Are</span>
+                <h2>Engineering <span>Solutions</span> for the Modern Web</h2>
+                <p>We specialize in resolving complex source path issues and ensuring offline index stability. Our workflow is built on the principle of automated commits and semantic excellence.</p>
+                
+                <ul class="about-points">
+                    <li>
+                        <strong>Automated Workflow</strong>
+                        <p>Handling transitions from staging to production seamlessly.</p>
+                    </li>
+                    <li>
+                        <strong>Structural Integrity</strong>
+                        <p>Using semantic DOM for scalable and accessible architecture.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+    <footer id="footer" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <!-- Brand & Social -->
+                <div class="footer-col brand-col">
+                    <div class="brand">
+                        <div class="logo-orb"></div>
+                        <div class="brand-name">Taskly<span>Elite</span></div>
+                    </div>
+                    <p class="footer-desc">Advanced task management that helps you work smarter and achieve more with AI.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Product -->
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest features.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="bottom-flex">
+                    <p>&copy; 2026 Taskly Elite. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuToggle = document.querySelector('#mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Bonus: Icon ko 'X' mein convert karne ke liye animation (optional)
+        menuToggle.classList.toggle('is-active');
+    });
+</script>
+</body>
+</html>
