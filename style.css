@@ -227,9 +227,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     filter: drop-shadow(0 0 10px var(--primary));
 
 }
-
-
-
 .service-box h3 {
 
     font-size: 1.4rem;
@@ -239,9 +236,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     margin-bottom: 15px;
 
 }
-
-
-
 .service-box p {
 
     font-size: 0.95rem;
@@ -252,10 +246,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
 }
 
-
-
-/* HIGHLIGHT BOX */
-
 .service-box.highlight {
 
     border-color: rgba(59, 130, 246, 0.3);
@@ -264,7 +254,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
 
 
-/* --- PROCESS FLOW (FIXED ALIGNMENT) --- */
+/* --- PROCESS FLOW--- */
 
 .process-flow-container {
 
@@ -281,9 +271,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     max-width: 900px;
 
 }
-
-
-
 .p-step {
 
     display: flex;
@@ -297,9 +284,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     font-weight: 500;
 
 }
-
-
-
 .p-number {
 
     width: 30px;
@@ -372,63 +356,60 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
 
 
-
 @media (max-width: 992px) {
-    /* Navbar ki height aur padding kam ki taake screen ghaire nahi */
     .premium-nav {
-        height: 70px;
-        padding: 0;
+        height: 75px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
     }
 
     .nav-container {
-        width: 95%;
+        width: 100%;
         display: flex;
-        justify-content: space-between; /* Logo ek taraf, actions dusri taraf */
+        justify-content: space-between; 
         align-items: center;
-        gap: 10px;
+        gap: 0;
     }
-
-    /* Menu: Inko chota karke beech mein fit kiya */
     .nav-menu {
-        display: flex;
-        gap: 12px;
+        display: none !important; 
     }
 
-    .nav-menu a {
-        font-size: 0.75rem; /* Text size chota kiya taake fit ho jaye */
-        font-weight: 600;
-        letter-spacing: 0;
+    
+    .brand {
+        flex-shrink: 0;
     }
-
-    /* Brand/Logo: Isko bhi thoda shrink kiya */
+    
     .brand-name {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
-    .logo-orb {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* Actions: Buttons ko "Mini" kar diya */
     .nav-actions {
         display: flex;
-        gap: 8px;
+        gap: 10px;
+        align-items: center;
     }
 
     .btn-ghost {
-        display: none; /* Mobile par 'Log In' hide kar dein, sirf main action rakhein */
+        font-size: 0.75rem;
+        padding: 5px 8px;
+        margin-right: 0;
+    
     }
 
     .btn-main-action {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-        border-radius: 6px;
-        white-space: nowrap; /* Button ka text wrap na ho */
+        padding: 10px 18px;
+        font-size: 0.75rem;
+        border-radius: 8px; 
+        white-space: nowrap;
+        background: #fff;
+        color: #000;
+        font-weight: 800;
     }
 }
 
-/* --- ROBOT IMAGE RESPONSIVE (Strict Fix) --- */
+
+/* --- ROBOT IMAGE R --- */
 @media (max-width: 768px) {
     .content-wrapper {
         grid-template-columns: 1fr;
@@ -438,13 +419,13 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
     #robot {
         width: 100%;
-        max-width: 280px; /* Mobile screen ke mutabiq chota */
+        max-width: 280px; 
         margin: 20px auto 0;
         height: auto;
     }
 
     h1 {
-        font-size: 2.5rem; /* Heading choti ki taake robot ke saath symmetric lage */
+        font-size: 2.5rem;
     }
 }
 
@@ -471,10 +452,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     text-align: center;
 
 }
-
-
-
-/* 3-Column Grid based on your image structure */
 
 .features-grid {
 
@@ -535,16 +512,11 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     opacity: 0.8;
 
 }
-
-
-
 .feature-content {
 
     padding: 25px;
 
 }
-
-
 
 .feature-content h3 {
 
@@ -556,8 +528,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
 }
 
-
-
 .feature-content p {
 
     color: #a0a0a0;
@@ -567,8 +537,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     line-height: 1.6;
 
 }
-
-/* Grid remains the same - it will automatically wrap to a new row */
 
 .features-grid {
 
@@ -611,17 +579,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     filter: brightness(0.8);
 
 }
-
-
-
-
-
-
-
-
-
-
-
 /* Mobile Friendly */
 
 @media (max-width: 768px) {
@@ -633,12 +590,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     }
 
 }
-
-
-
-
-
-/* --- PRICING RE-DESIGNED --- */
+/* --- PRICING --- */
 
 .pricing-container {
 
@@ -859,9 +811,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     }
 
 }
-
-
-
 /* DASHBOARD & ROBOT */
 
 .ai-dashboard { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 40px; padding: 60px; position: relative; }
@@ -880,11 +829,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 
 .m-loader::after { content:''; display:block; width: 50%; height:100%; background: var(--primary); animation: load 2s infinite; position: absolute; }
 
-
-
-
-
-/* --- MODERN ASYMMETRIC ABOUT --- */
+/* --- ABOUT --- */
 
 .about-modern {
 
@@ -893,9 +838,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     background: #000;
 
 }
-
-
-
 .about-wrapper {
 
     display: grid;
@@ -907,8 +849,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     align-items: center;
 
 }
-
-
 
 /* Image Side */
 
@@ -965,7 +905,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 }
 
 
-
 .experience-badge h4 { color: #fff; font-size: 1.5rem; margin: 0; }
 
 .experience-badge p { color: #666; font-size: 0.8rem; margin: 5px 0 0; }
@@ -1005,13 +944,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     margin-bottom: 30px;
 
 }
-
-
-
 .about-content h2 span { color: #444; }
-
-
-
 .about-content p {
 
     color: #888;
@@ -1023,9 +956,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     margin-bottom: 40px;
 
 }
-
-
-
 .about-points {
 
     list-style: none;
@@ -1033,9 +963,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     padding: 0;
 
 }
-
-
-
 .about-points li {
 
     margin-bottom: 25px;
@@ -1045,9 +972,6 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     border-left: 2px solid #222;
 
 }
-
-
-
 .about-points strong { color: #fff; display: block; margin-bottom: 5px; }
 
 .about-points p { font-size: 0.9rem; margin: 0; }
@@ -1063,16 +987,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     .experience-badge { position: relative; right: 0; bottom: 0; margin-top: 20px; }
 
 }
-
-
-
-
-
-
-
-
-
-/* FOOTER (IMAGE STYLE) */
+/* FOOTER */
 
 .main-footer { padding: 80px 0 30px; background: #030303; border-top: 1px solid var(--border); margin-top: 100px; }
 
@@ -1128,7 +1043,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
 /* --- RESPONSIVE FOOTER --- */
 @media (max-width: 768px) {
     .footer-grid {
-        grid-template-columns: 1fr; /* Mobile par columns ek ke niche ek aayenge */
+        grid-template-columns: 1fr; 
         gap: 30px;
         text-align: center;
     }
@@ -1139,7 +1054,7 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     }
 
     .social-icons {
-        justify-content: center; /* Icons center mein */
+        justify-content: center; 
     }
 
     .newsletter-form {
@@ -1148,19 +1063,18 @@ p { color: var(--text-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 
     }
 
     .bottom-flex {
-        flex-direction: column; /* Copyright aur links center mein */
+        flex-direction: column; 
         align-items: center;
         gap: 10px;
         text-align: center;
     }
 }
 
-/* --- GLOBAL IMAGE & WIDTH FIX --- */
 img {
     max-width: 100%;
     height: auto;
 }
 
 body {
-    overflow-x: hidden; /* Horizontal scroll khatam karne ke liye */
+    overflow-x: hidden; 
 }}
